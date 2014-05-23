@@ -1,0 +1,83 @@
+* {
+    position: relative;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#reels {
+    margin: 0 auto;
+    width: 600px;
+    height: 370px;
+    -webkit-perspective: 800;
+}
+
+.reel-slot {
+    top: 130px;
+    float: left;
+    width: 100px;
+    height: 400px;
+    -webkit-transform-style: preserve-3d;
+}
+
+#slot-1 {
+    left: -50px;
+}
+
+#slot-3 {
+    left: 50px;
+}
+
+.reel {
+    height: 110px;
+    width: 100px;
+    -webkit-transform-style: preserve-3d;
+    transition-property: -webkit-transform;
+    transition-duration: 4s;
+    transition-timing-function: linear;
+}
+
+.symbol {
+    position: absolute;
+    left: 150px;
+    width: 100px;
+    height: 110px;
+    opacity: 1.0;
+    background-color: #FFFFF0;
+    color: rgba(0,0,0,0.9);
+}
+  
+.symbol > img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: block;
+    border: 1px solid black;
+    height: 110px;
+    width: 100px;
+}
+
+@-webkit-keyframes x-spin {
+    0%    { -webkit-transform: rotateX(0deg); }
+    50%   { -webkit-transform: rotateX(-180deg); }
+    100%  { -webkit-transform: rotateX(-360deg); }
+}
+
+.prize {
+    display: none;
+    margin-top: 16px;
+}
+
+img.prize {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+h2.prize {
+    text-align: center;
+    width: 100%;
+}

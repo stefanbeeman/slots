@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Stefan's Slot Machine</title>
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="smb.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
+        <script type="text/javascript" src="smb.js"></script>
+    </head>
+    
+    <body>
+        <div id="reels">
+            <img class="prize"/>
+            <div id="slot-1" class="reel-slot">
+                <div id="reel-1" class="reel">
+                    <div class="symbol" style="-webkit-transform: rotateX(0deg) translateZ(150px); ">
+                        <img src="img/coffee1.jpg">
+                    </div>
+                    <div class="symbol" style="-webkit-transform: rotateX(40deg) translateZ(150px); ">
+                        <img src="img/tea1.jpg">
+                    </div>
+                    <div class="symbol" style="-webkit-transform: rotateX(80deg) translateZ(150px); ">
+                        <img src="img/ess1.jpg">
+                    </div>
+                    <div class="symbol" style="-webkit-transform: rotateX(120deg) translateZ(150px); ">
+                        <img src="img/coffee1.jpg">
+                    </div>
+                    <div class="symbol" style="-webkit-transform: rotateX(160deg) translateZ(150px); ">
+                        <img src="img/tea1.jpg">
+                    </div>
+                    <div class="symbol" style="-webkit-transform: rotateX(200deg) translateZ(150px); ">
+                        <img src="img/ess1.jpg">
+                    </div>
+                    <div class="symbol" style="-webkit-transform: rotateX(240deg) translateZ(150px); ">
+                        <img src="img/coffee1.jpg">
+                    </div>
+                    <div class="symbol" style="-webkit-transform: rotateX(280deg) translateZ(150px); ">
+                        <img src="img/tea1.jpg">
+                    </div>
+                    <div class="symbol" style="-webkit-transform: rotateX(320deg) translateZ(150px); ">
+                        <img src="img/ess1.jpg">
+                    </div>
+                </div>
+            </div>
+            
+            <div id="slot-2" class="reel-slot">
+                <div id="reel-2" class="reel">
+                   <div class="symbol" style="-webkit-transform: rotateX(0deg) translateZ(150px); ">
+                        <img src="img/coffee2.jpg">
+                    </div>
+                    <div class="symbol" style="-webkit-transform: rotateX(40deg) translateZ(150px); ">
+                        <img src="img/tea2.jpg">
+                    </div>
+                    <div class="symbol" style="-webkit-transform: rotateX(80deg) translateZ(150px); ">
+                        <img src="img/ess2.jpg">
+                    </div>
+                    <div class="symbol" style="-webkit-transform: rotateX(120deg) translateZ(150px); ">
+                        <img src="img/coffee2.jpg">
+                    </div>
+                    <div class="symbol" style="-webkit-transform: rotateX(160deg) translateZ(150px); ">
+                        <img src="img/tea2.jpg">
+                    </div>
+                    <div class="symbol" style="-webkit-transform: rotateX(200deg) translateZ(150px); ">
+                        <img src="img/ess2.jpg">
+                    </div>
+                    <div class="symbol" style="-webkit-transform: rotateX(240deg) translateZ(150px); ">
+                        <img src="img/coffee2.jpg">
+                    </div>
+                    <div class="symbol" style="-webkit-transform: rotateX(280deg) translateZ(150px); ">
+                        <img src="img/tea2.jpg">
+                    </div>
+                    <div class="symbol" style="-webkit-transform: rotateX(320deg) translateZ(150px); ">
+                        <img src="img/ess2.jpg">
+                    </div>
+                </div>
+            </div>
+            
+            <div id="slot-3" class="reel-slot">
+                <div id="reel-3" class="reel">
+                   <div class="symbol" style="-webkit-transform: rotateX(0deg) translateZ(150px); ">
+                        <img src="img/coffee3.jpg">
+                    </div>
+                    <div class="symbol" style="-webkit-transform: rotateX(40deg) translateZ(150px); ">
+                        <img src="img/tea3.jpg">
+                    </div>
+                    <div class="symbol" style="-webkit-transform: rotateX(80deg) translateZ(150px); ">
+                        <img src="img/ess3.jpg">
+                    </div>
+                    <div class="symbol" style="-webkit-transform: rotateX(120deg) translateZ(150px); ">
+                        <img src="img/coffee3.jpg">
+                    </div>
+                    <div class="symbol" style="-webkit-transform: rotateX(160deg) translateZ(150px); ">
+                        <img src="img/tea3.jpg">
+                    </div>
+                    <div class="symbol" style="-webkit-transform: rotateX(200deg) translateZ(150px); ">
+                        <img src="img/ess3.jpg">
+                    </div>
+                    <div class="symbol" style="-webkit-transform: rotateX(240deg) translateZ(150px); ">
+                        <img src="img/coffee3.jpg">
+                    </div>
+                    <div class="symbol" style="-webkit-transform: rotateX(280deg) translateZ(150px); ">
+                        <img src="img/tea3.jpg">
+                    </div>
+                    <div class="symbol" style="-webkit-transform: rotateX(320deg) translateZ(150px); ">
+                        <img src="img/ess3.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2">
+                <span type="button" class="btn btn-primary btn-lg btn-block">Spin!</span>
+                <h2 class="prize"></h2>
+            </div>
+        </div>
+    </body>
+    
+</html>
